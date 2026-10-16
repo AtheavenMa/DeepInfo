@@ -1,4 +1,4 @@
-# 🧠 DeepInfo: Measuring Information Discarding in Neural Networks
+# 🧠 DeepInfo: Quantification and Analysis of Layer-wise and Pixel-wise Information Discarding
 
 👉 **TL;DR.** DeepInfo measures how neural networks discard input information across layers and pixels. Explore **Computational Information Discarding (CID)**, **Reconstruction Uncertainty (RU)**, and information concentration with a simple PyTorch interface and a ready-to-run visual demo.
 
