@@ -1,0 +1,56 @@
+{
+  "task": "red-vs-green synthetic disk classification",
+  "dataset": "synthetic (not the ICML paper benchmark)",
+  "device": "cpu",
+  "seed": 2022,
+  "steps": 32,
+  "noise_samples": 8,
+  "grid": [
+    8,
+    8
+  ],
+  "runtime_seconds": 1.103,
+  "class_probabilities": [
+    0.9998643398284912,
+    0.0001356697321170941
+  ],
+  "layerwise_cid_nats": {
+    "Shallow": -1.0456889867782593,
+    "Mid": -0.9708974361419678,
+    "Output": -1.0547555685043335
+  },
+  "concentration": {
+    "Shallow": {
+      "foreground_cid": -0.6543568269066189,
+      "background_cid": -1.073963309457789,
+      "concentration": -0.41960648255117006
+    },
+    "Mid": {
+      "foreground_cid": -0.2286194061887437,
+      "background_cid": -1.0245280213380983,
+      "concentration": -0.7959086151493546
+    },
+    "Output": {
+      "foreground_cid": -0.3596200027327607,
+      "background_cid": -1.1049800609418858,
+      "concentration": -0.7453600582091251
+    }
+  },
+  "selected_steps": {
+    "Shallow": 18,
+    "Mid": 14,
+    "Output": 20
+  },
+  "normalized_distortions": {
+    "Shallow": 1.1070291996002197,
+    "Mid": 1.186518907546997,
+    "Output": 1.1137268543243408
+  },
+  "sample_sha256": "755c078074a09d0533451f5739cd1e1fba44937825408d5f73c52e3210d0ae17",
+  "weights_sha256": "7fcf16d69b96f6904a3b2b094c03cc2e13d319041435cab5b3c6eb8592b8e997",
+  "versions": {
+    "python": "3.13.5",
+    "torch": "2.10.0+cpu",
+    "numpy": "2.3.5"
+  }
+}

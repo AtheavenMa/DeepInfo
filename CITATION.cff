@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use DeepInfo, please cite our ICML 2022 paper."
+title: "Quantification and Analysis of Layer-wise and Pixel-wise Information Discarding"
+type: conference-paper
+authors:
+  - family-names: Ma
+    given-names: Haotian
+  - family-names: Zhang
+    given-names: Hao
+  - family-names: Zhou
+    given-names: Fan
+  - family-names: Zhang
+    given-names: Yinqing
+  - family-names: Zhang
+    given-names: Quanshi
+conference:
+  name: "Proceedings of the 39th International Conference on Machine Learning"
+  start: 2022-07-17
+  end: 2022-07-23
+year: 2022
+url: "https://proceedings.mlr.press/v162/ma22b.html"
+repository-code: "https://github.com/AtheavenMa/DeepInfo"

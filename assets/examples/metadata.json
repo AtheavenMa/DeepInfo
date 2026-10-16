@@ -1,0 +1,6 @@
+{
+  "generation_script": "scripts/make_assets.py",
+  "seed": 1701,
+  "description": "Synthetic 32x32 RGB disk and binary foreground mask",
+  "benchmark": false
+}

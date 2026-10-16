@@ -1,0 +1,10 @@
+{
+  "architecture": "model.TinyCNN",
+  "training_data": "160 generated red/green disk images",
+  "generation_script": "scripts/make_assets.py",
+  "epochs": 75,
+  "seed": 2022,
+  "training_accuracy": 1.0,
+  "sample_kind": "synthetic",
+  "notes": "Illustrative checkpoint trained here, not an ICML 2022 experimental model."
+}

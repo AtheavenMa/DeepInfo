@@ -1,0 +1,31 @@
+name: Tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install CPU-only PyTorch
+        run: python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Install DeepInfo and test requirements
+        run: python -m pip install -e '.[test]'
+      - name: Run unit tests and offline demo smoke test
+        run: python -m pytest -q
+      - name: Run complete offline demo
+        run: python demo.py --device cpu --output outputs/ci_demo
+      - name: Verify output files
+        run: |
+          test -s outputs/ci_demo/demo_output.png
+          test -s outputs/ci_demo/layerwise.png
+          test -s outputs/ci_demo/summary.json
