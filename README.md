@@ -18,8 +18,6 @@
 
 **Figure 1.** CID enables comparisons between different network layers and architectures, unlike the attribution magnitudes of conventional gradient-, perturbation-, and CAM-based explanations. On VGG-16 trained with CUB-200-2011, pixel-wise CID also reveals how the spatial distribution of discarded information changes with depth.
 
-**DeepInfo** visualizes information discarding at individual input locations and across successive neural-network layers. The project is based on [*Quantification and Analysis of Layer-wise and Pixel-wise Information Discarding*](https://proceedings.mlr.press/v162/ma22b.html), **ICML 2022 Spotlight**.
-
 ## ✨ Highlights
 
 - 🧠 **Computational Information Discarding.** Pixel-wise CID maps from PyTorch models.
@@ -47,15 +45,6 @@ Conventional attribution maps can identify important image regions, but their ma
 ## 📊 Main Results
 
 The ICML 2022 paper evaluates information discarding across network architectures, layers, and input regions, and investigates information processing under model compression and knowledge distillation.
-
-**Weakly supervised object localization accuracy** from the [ICML 2022 presentation](https://icml.cc/media/icml-2022/Slides/17920.pdf):
-
-| Method | ResNet-50 ↑ | VGG-16 ↑ |
-|---|:---:|:---:|
-| CAM | .367 | — |
-| Grad-CAM | .355 | .507 |
-| LRP | — | .489 |
-| **CID** | **.493** | **.578** |
 
 <details>
 <summary>🧠 Figure 2. Two views of input information</summary>
