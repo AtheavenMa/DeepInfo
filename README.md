@@ -90,29 +90,6 @@ python demo.py --device cpu --steps 48 --noise-samples 12
 python demo.py --output outputs/custom --grid 4
 ```
 
-<p align="center">
-  <img src="assets/demo_output.png" alt="DeepInfo input image and CID heatmaps across layers" width="900"/>
-</p>
-
-**CID maps across three neural-network representations.**
-
-<p align="center">
-  <img src="assets/layerwise.png" alt="Layer-wise information discarding" width="700"/>
-</p>
-
-The demo saves `demo_output.png`, `layerwise.png`, `attribution.npz`, and `summary.json` to `outputs/demo/`. Read the [Demo Guide](docs/DEMO.md) or view the [recorded results](assets/summary.json).
-
----
-
-## 🗺️ Figure Map
-
-| Figure | Description |
-|---|---|
-| [Overview](assets/figures/overview.svg) | Layer-wise and pixel-wise information discarding |
-| [CID Demo](assets/demo_output.png) | Input image and information discarding maps |
-| [Layer-wise Demo](assets/layerwise.png) | CID across successive model layers |
-| [ICML 2022 Paper](https://proceedings.mlr.press/v162/ma22b/ma22b.pdf) | Original paper figures and experimental results |
-
 ---
 
 ## 📖 Citation
